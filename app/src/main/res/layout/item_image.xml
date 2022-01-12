@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <TextView android:id="@+id/titre"
+        android:paddingLeft="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/photo"/>
+
+    <TextView android:id="@+id/date"
+        android:textSize="14sp"
+        android:paddingLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/photo"
+        android:layout_below="@+id/titre"/>
+        <TextView android:id="@+id/idImage"
+            android:textSize="14sp"
+            android:paddingLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_toRightOf="@id/photo"
+            android:layout_below="@+id/date"/>
+        <Button
+            android:id="@+id/delete"
+            android:text="delete"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/photo"
+            android:layout_below="@+id/date"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
